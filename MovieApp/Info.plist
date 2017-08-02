@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Plumpfull.ttf</string>
+		<string>BEBAS.ttf</string>
+		<string>fontawesome-webfont.ttf</string>
+	</array>
 </dict>
 </plist>

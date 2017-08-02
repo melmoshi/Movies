@@ -37,7 +37,7 @@ ID,Type,subType,Name,Link
 36,Action,Comedy,Deadpool (2016),https://www.rottentomatoes.com/m/deadpool/
 37,Animated,-,Big Hero 6 (2014),https://www.rottentomatoes.com/m/big_hero_6/
 37,Adventure,Action,Star Wars (1977),https://www.rottentomatoes.com/m/star_wars
-37,Drama,Thiller,Fight Club (1999),https://www.rottentomatoes.com/m/fight_club
+37,Drama,Thriller,Fight Club (1999),https://www.rottentomatoes.com/m/fight_club
 37,Comedy,Romance,Groundhog Day (1993),https://www.rottentomatoes.com/m/groundhog_day
 37,Comedy,-,The Hangover (2009),https://www.rottentomatoes.com/m/10010667_hangover
 37,Comedy,-,Little Miss Sunshine (2006),https://www.rottentomatoes.com/m/little_miss_sunshine
@@ -81,7 +81,7 @@ ID,Type,subType,Name,Link
 ,Action,Sports,Rocky (1976),https://www.rottentomatoes.com/m/1017776_rocky
 ,Action,Adventure,The Bourne Ultimatum (2007),https://www.rottentomatoes.com/m/bourne_ultimatum
 ,Action,Eccentric,Kill Bill: Vol.1 (2003),https://www.rottentomatoes.com/m/kill_bill_vol_1
-,Thiller,Drama,No Country For Old Men (2007),https://www.rottentomatoes.com/m/no_country_for_old_men
+,Thriller,Drama,No Country For Old Men (2007),https://www.rottentomatoes.com/m/no_country_for_old_men
 ,Thriller,Horror,The Shining (1980),https://www.rottentomatoes.com/m/shining
 ,Thriller,-,The Sixth Sense (1999),https://www.rottentomatoes.com/m/sixth_sense
 ,Horror,-,The Exorcist (1973),https://www.rottentomatoes.com/m/exorcist

@@ -14,8 +14,8 @@ class IngredientsButton: UIButton {
         layer.cornerRadius = 20
         layer.borderWidth = 2
         layer.borderColor = UIColor.white.cgColor
-        backgroundColor = UIColor(red: 106/255, green: 194/255, blue: 196/255, alpha: 1.0)
-        contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+        contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16) 
     }
 
 
@@ -27,9 +27,19 @@ class ResetButton: UIButton {
         layer.cornerRadius = 15
         layer.borderWidth = 1
         layer.borderColor = UIColor.white.cgColor
-        backgroundColor = UIColor(red: 106/255, green: 194/255, blue: 196/255, alpha: 1.0)
+        backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
         contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
     }
     
     
+}
+
+class tagLbl: UILabel {
+    
+    override func awakeFromNib() {
+    layer.cornerRadius = 20
+    layer.borderWidth = 2
+    layer.borderColor = UIColor.white.cgColor
+    backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+    }
 }
