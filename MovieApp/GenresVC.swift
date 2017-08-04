@@ -173,8 +173,8 @@ class GenresVC: UIViewController {
     func colorReset (button: IngredientsButton) {
         
         button.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
-        
         button.tintColor = UIColor.white
+        button.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0).cgColor
         
     }
     

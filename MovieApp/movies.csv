@@ -1,7 +1,7 @@
 ID,Type,subType,Name,Link
 1,Action,Adventure,Casino Royale (2006),https://www.rottentomatoes.com/m/casino_royale/
 2,Drama,Thriller,The Departed (2006),https://www.rottentomatoes.com/m/departed/
-3,Action,-,3:10 to Yuma (2007),https://www.rottentomatoes.com/m/310_to_yuma/
+3,Action,Western,3:10 to Yuma (2007),https://www.rottentomatoes.com/m/310_to_yuma/
 4,Action,Thriller,Batman Begins (2005),https://www.rottentomatoes.com/m/batman_begins/
 5,Action,Thriller,The Dark Knight (2008),https://www.rottentomatoes.com/m/the_dark_knight/
 6,Action,-,Spider-Man 2 (2004),https://www.rottentomatoes.com/m/spiderman_2/
@@ -16,7 +16,7 @@ ID,Type,subType,Name,Link
 15,Adventure,Drama,Master and Commander (2003),https://www.rottentomatoes.com/m/master_and_commander_the_far_side_of_the_world/
 16,Action,-,Crouching Tiger Hidden Dragon (2001),https://www.rottentomatoes.com/m/crouching_tiger_hidden_dragon/
 17,Action,Adventure,War of the Worlds (2005),https://www.rottentomatoes.com/m/war_of_the_worlds/
-18,Adventure,Adventure,The Day After Tomorrow (2004),https://www.rottentomatoes.com/m/day_after_tomorrow/
+18,Adventure,-,The Day After Tomorrow (2004),https://www.rottentomatoes.com/m/day_after_tomorrow/
 19,Animated,-,Shrek (2001),https://www.rottentomatoes.com/m/shrek/
 20,Comedy,-,Juno (2007),https://www.rottentomatoes.com/m/juno/
 21,Comedy,-,Hairspray (2007),https://www.rottentomatoes.com/m/hairspray/
@@ -30,10 +30,10 @@ ID,Type,subType,Name,Link
 29,Drama,-,Donnie Darko (2001),https://www.rottentomatoes.com/m/donnie_darko
 30,Action,Thriller,Logan (2017),https://www.rottentomatoes.com/m/logan_2017/
 31,Action,-,The Avengers (2012),https://www.rottentomatoes.com/m/marvels_the_avengers/
-32,Action,-,Captain America: Civil War,https://www.rottentomatoes.com/m/captain_america_civil_war/
+32,Action,-,Captain America: Civil War (2016),https://www.rottentomatoes.com/m/captain_america_civil_war/
 33,Action,Adventure,Guardians of the Galaxy (2014),https://www.rottentomatoes.com/m/guardians_of_the_galaxy/
-34,Action,-,X-Men: Days of Future Past,https://www.rottentomatoes.com/m/x_men_days_of_future_past/
-35,Animated,-,The Lego Batman Movie,https://www.rottentomatoes.com/m/the_lego_batman_movie/
+34,Action,-,X-Men: Days of Future Past (2014),https://www.rottentomatoes.com/m/x_men_days_of_future_past/
+35,Animated,-,The Lego Batman Movie (2017),https://www.rottentomatoes.com/m/the_lego_batman_movie/
 36,Action,Comedy,Deadpool (2016),https://www.rottentomatoes.com/m/deadpool/
 37,Animated,-,Big Hero 6 (2014),https://www.rottentomatoes.com/m/big_hero_6/
 37,Adventure,Action,Star Wars (1977),https://www.rottentomatoes.com/m/star_wars
@@ -80,7 +80,7 @@ ID,Type,subType,Name,Link
 ,Action,Thriller,Die Hard (1988),https://www.rottentomatoes.com/m/die_hard
 ,Action,Sports,Rocky (1976),https://www.rottentomatoes.com/m/1017776_rocky
 ,Action,Adventure,The Bourne Ultimatum (2007),https://www.rottentomatoes.com/m/bourne_ultimatum
-,Action,Eccentric,Kill Bill: Vol.1 (2003),https://www.rottentomatoes.com/m/kill_bill_vol_1
+,Action,,Kill Bill: Vol.1 (2003),https://www.rottentomatoes.com/m/kill_bill_vol_1
 ,Thriller,Drama,No Country For Old Men (2007),https://www.rottentomatoes.com/m/no_country_for_old_men
 ,Thriller,Horror,The Shining (1980),https://www.rottentomatoes.com/m/shining
 ,Thriller,-,The Sixth Sense (1999),https://www.rottentomatoes.com/m/sixth_sense
@@ -95,7 +95,7 @@ ID,Type,subType,Name,Link
 ,Drama,Adventure,Harry Potter and the Deathly Hallows Pt. 2 (2011),https://www.rottentomatoes.com/m/harry_potter_and_the_deathly_hallows_part_2_2011
 ,Animated,-,Toy Story 3 (2010),https://www.rottentomatoes.com/m/toy_story_3
 ,,-,,
-,Animated,-,"Monsters, Inc (2001)",https://www.rottentomatoes.com/m/monsters_inc
+,Animated,-,Monsters Inc (2001),https://www.rottentomatoes.com/m/monsters_inc
 ,Animated,Adventure,Fantastic Mr. Fox (2009),https://www.rottentomatoes.com/m/1197696_fantastic_mr_fox
 ,Action,Drama,Inglorious Bastards (2009),https://www.rottentomatoes.com/m/inglourious_basterds
 ,Comedy,-,I Love You Man (2009),https://www.rottentomatoes.com/m/i_love_you_man

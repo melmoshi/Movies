@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -27,42 +27,55 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="dCe-yk-ZKb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-eR-kJ5">
-                                <rect key="frame" x="31" y="184" width="259.5" height="129"/>
+                                <rect key="frame" x="124.5" y="347" width="519" height="258"/>
                                 <string key="text">MOVIE 
 NIGHT!</string>
                                 <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="70"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="140"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-qz-21W" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="35" y="349" width="250" height="40"/>
+                                <rect key="frame" x="134" y="641" width="500" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4O9-h9-Uae"/>
-                                    <constraint firstAttribute="width" constant="250" id="Ssf-Cg-dSW"/>
+                                    <constraint firstAttribute="height" constant="40" id="4O9-h9-Uae">
+                                        <variation key="widthClass=regular" constant="80"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="Ssf-Cg-dSW">
+                                        <variation key="widthClass=regular" constant="500"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="22"/>
                                 <state key="normal" title="Get  Movie  Suggestions!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="44"/>
+                                </variation>
                                 <connections>
                                     <segue destination="yLs-SS-MTm" kind="show" id="cDg-FL-KOe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grab the popcorn,  It's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dn-cg-Ubk">
-                                <rect key="frame" x="24" y="135" width="272" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grab  the   popcorn,  It's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dn-cg-Ubk">
+                                <rect key="frame" x="28" y="277.5" width="712" height="41.5"/>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="44"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,7 +93,7 @@ NIGHT!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+            <point key="canvasLocation" x="134.53237410071944" y="135.97122302158274"/>
         </scene>
         <!--GenresVC-->
         <scene sceneID="iFa-5J-QXU">
@@ -91,16 +104,16 @@ NIGHT!</string>
                         <viewControllerLayoutGuide type="bottom" id="IBr-GS-NwF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZUw-3K-LgJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-5s-0kd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap your favorite genres" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-k2-pOZ">
-                                <rect key="frame" x="66.5" y="89.5" width="187.5" height="23.5"/>
+                                <rect key="frame" x="252" y="284" width="264.5" height="33"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +123,7 @@ NIGHT!</string>
                                 </variation>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyV-dm-hUx">
-                                <rect key="frame" x="52.5" y="457" width="215" height="40"/>
+                                <rect key="frame" x="259" y="709" width="250" height="80"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WDX-f4-WLV">
@@ -138,11 +151,15 @@ NIGHT!</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-yY-xFx" customClass="ResetButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="120" y="517" width="80" height="30"/>
+                                <rect key="frame" x="324" y="809" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="RYS-LZ-0aW"/>
-                                    <constraint firstAttribute="width" constant="80" id="YkG-h7-28D"/>
+                                    <constraint firstAttribute="height" constant="30" id="RYS-LZ-0aW">
+                                        <variation key="widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="80" id="YkG-h7-28D">
+                                        <variation key="widthClass=regular" constant="120"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -161,7 +178,7 @@ NIGHT!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is2-bL-S5S" customClass="RoundLabel" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="52.5" y="457" width="215" height="40"/>
+                                <rect key="frame" x="259" y="709" width="250" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="6oG-NE-QP3">
@@ -175,17 +192,17 @@ NIGHT!</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="32"/>
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-aL-c4a">
-                                <rect key="frame" x="53" y="151" width="214" height="266"/>
+                                <rect key="frame" x="240.5" y="355" width="287" height="314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-rc-NO6">
-                                        <rect key="frame" x="23" y="0.0" width="168" height="44"/>
+                                        <rect key="frame" x="32.5" y="0.0" width="222" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-wp-GTJ" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,7 +215,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzr-mi-QyZ" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="94" y="0.0" width="74" height="44"/>
+                                                <rect key="frame" x="120" y="0.0" width="102" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -213,10 +230,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PHU-tG-eN0">
-                                        <rect key="frame" x="7.5" y="74" width="199" height="44"/>
+                                        <rect key="frame" x="10.5" y="86" width="266" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-5U-V4K" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,7 +246,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-of-KCI" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="96" y="0.0" width="103" height="44"/>
+                                                <rect key="frame" x="123" y="0.0" width="143" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,10 +261,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7ZN-44-8HR">
-                                        <rect key="frame" x="0.0" y="148" width="214" height="44"/>
+                                        <rect key="frame" x="0.0" y="172" width="287" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-8q-z0D" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,7 +277,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-iS-ua5" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="115" y="0.0" width="99" height="44"/>
+                                                <rect key="frame" x="150" y="0.0" width="137" height="56"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,10 +292,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-VZ-0CC">
-                                        <rect key="frame" x="4" y="222" width="206" height="44"/>
+                                        <rect key="frame" x="5.5" y="258" width="276" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-VL-T0w" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="56"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.55294117649999996" blue="0.66666666669999997" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,7 +308,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYL-cl-aTs" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="136" y="0.0" width="70" height="44"/>
+                                                <rect key="frame" x="179" y="0.0" width="97" height="56"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.55294117649999996" blue="0.66666666669999997" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,13 +325,13 @@ NIGHT!</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameras  Rolling!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpS-OQ-z0Y">
-                                <rect key="frame" x="48" y="54" width="224.5" height="27.5"/>
+                                <rect key="frame" x="229.5" y="238" width="309.5" height="38"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="40"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="40"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -349,7 +366,7 @@ NIGHT!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vl7-F1-IkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="137"/>
+            <point key="canvasLocation" x="912.94964028776985" y="136.51079136690649"/>
         </scene>
         <!--SuggestionVC-->
         <scene sceneID="Lzn-hs-R6C">
@@ -360,16 +377,16 @@ NIGHT!</string>
                         <viewControllerLayoutGuide type="bottom" id="sva-Om-5pJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iMl-aq-L1m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="uSX-AR-4xf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="830" height="1112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-iw-pfP">
-                                <rect key="frame" x="4" y="114" width="312" height="160"/>
+                                <rect key="frame" x="4" y="299" width="760" height="246"/>
                                 <string key="text">FIGHT 
 CLUB 
 (2000)</string>
@@ -381,14 +398,14 @@ CLUB
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQZ-lm-lMn">
-                                <rect key="frame" x="52.5" y="377" width="215" height="40"/>
+                                <rect key="frame" x="244" y="773" width="280" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7nY-jh-72l">
                                         <variation key="widthClass=regular" constant="60"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="215" id="nXi-mf-Rhe">
-                                        <variation key="widthClass=regular" constant="180"/>
+                                        <variation key="widthClass=regular" constant="280"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="23"/>
@@ -403,18 +420,18 @@ CLUB
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="28"/>
                                 </variation>
                                 <connections>
                                     <action selector="seeReviewPressed:" destination="AVz-rn-NrR" eventType="touchUpInside" id="bll-gX-nuD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-JF-Iwc" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="52.5" y="435" width="215" height="40"/>
+                                <rect key="frame" x="244" y="851" width="280" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="7sN-iN-qb7">
-                                        <variation key="widthClass=regular" constant="240"/>
+                                        <variation key="widthClass=regular" constant="280"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="40" id="eJe-yf-9GL">
                                         <variation key="widthClass=regular" constant="60"/>
@@ -426,14 +443,14 @@ CLUB
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="28"/>
                                 </variation>
                                 <connections>
                                     <action selector="tryAgainPressed:" destination="AVz-rn-NrR" eventType="touchUpInside" id="l0f-kK-oB4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-hz-hBd" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="52.5" y="493" width="215" height="40"/>
+                                <rect key="frame" x="244" y="929" width="280" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dI4-l8-FR7">
@@ -449,7 +466,7 @@ CLUB
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="28"/>
                                 </variation>
                                 <connections>
                                     <action selector="bankToGenrePressed:" destination="AVz-rn-NrR" eventType="touchUpInside" id="KUi-GR-Cy1"/>
@@ -457,7 +474,7 @@ CLUB
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's  settled!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2d-gk-690">
-                                <rect key="frame" x="20" y="24" width="280" height="40"/>
+                                <rect key="frame" x="24" y="189" width="720" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="rkH-7G-MIY"/>
                                 </constraints>
@@ -465,11 +482,11 @@ CLUB
                                 <color key="textColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                    <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="40"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-iC-Ckl">
-                                <rect key="frame" x="72" y="54" width="176" height="40"/>
+                                <rect key="frame" x="248.5" y="239" width="271.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZnL-Pt-Tra"/>
                                 </constraints>
@@ -477,24 +494,32 @@ CLUB
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECJ-h3-lYd" userLabel="Image Stack">
-                                <rect key="frame" x="83" y="282" width="153" height="30"/>
+                                <rect key="frame" x="297.5" y="595" width="173" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LYJ-Kf-9U4" userLabel="Image1">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="19F-BT-nSH"/>
-                                            <constraint firstAttribute="width" constant="30" id="CJs-rL-h4B"/>
+                                            <constraint firstAttribute="height" constant="30" id="19F-BT-nSH">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="30" id="CJs-rL-h4B">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-6q-Cqv" userLabel="Image2">
-                                        <rect key="frame" x="123" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="133" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="baa-Ce-lzh"/>
-                                            <constraint firstAttribute="height" constant="30" id="hz6-c9-gnM"/>
+                                            <constraint firstAttribute="width" constant="30" id="baa-Ce-lzh">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="30" id="hz6-c9-gnM">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -503,12 +528,12 @@ CLUB
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-CY-5pE">
-                                <rect key="frame" x="48" y="317" width="224" height="40"/>
+                                <rect key="frame" x="272" y="640" width="224" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gq-vX-6rT">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="IS4-r9-W0W"/>
+                                            <constraint firstAttribute="height" constant="30" id="IS4-r9-W0W"/>
                                             <constraint firstAttribute="width" constant="100" id="iQA-Tv-C5T"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
@@ -516,9 +541,9 @@ CLUB
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63F-dR-tIJ">
-                                        <rect key="frame" x="124" y="0.0" width="100" height="40"/>
+                                        <rect key="frame" x="124" y="0.0" width="100" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0iO-rW-iBE"/>
+                                            <constraint firstAttribute="height" constant="30" id="0iO-rW-iBE"/>
                                             <constraint firstAttribute="width" constant="100" id="vfG-lY-AB7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
@@ -537,11 +562,15 @@ CLUB
                             <constraint firstItem="a2d-gk-690" firstAttribute="leading" secondItem="iMl-aq-L1m" secondAttribute="leadingMargin" constant="4" id="Mxy-f1-B0q"/>
                             <constraint firstItem="Hnf-iC-Ckl" firstAttribute="centerX" secondItem="iMl-aq-L1m" secondAttribute="centerX" id="NDF-vT-iQS"/>
                             <constraint firstItem="wSO-iw-pfP" firstAttribute="top" secondItem="Hnf-iC-Ckl" secondAttribute="bottom" constant="20" id="Pa6-7o-gXW"/>
-                            <constraint firstItem="Hnf-iC-Ckl" firstAttribute="top" secondItem="a2d-gk-690" secondAttribute="bottom" constant="-10" id="RtS-a6-rXJ"/>
+                            <constraint firstItem="Hnf-iC-Ckl" firstAttribute="top" secondItem="a2d-gk-690" secondAttribute="bottom" constant="-10" id="RtS-a6-rXJ">
+                                <variation key="widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="sva-Om-5pJ" firstAttribute="top" secondItem="lXD-hz-hBd" secondAttribute="bottom" constant="35" id="Spu-nU-LyI"/>
                             <constraint firstItem="EfG-JF-Iwc" firstAttribute="centerX" secondItem="iMl-aq-L1m" secondAttribute="centerX" id="baS-so-yeJ"/>
                             <constraint firstItem="gQZ-lm-lMn" firstAttribute="centerX" secondItem="iMl-aq-L1m" secondAttribute="centerX" id="f7Y-yT-YP6"/>
-                            <constraint firstItem="ECJ-h3-lYd" firstAttribute="top" secondItem="wSO-iw-pfP" secondAttribute="bottom" constant="8" id="gJZ-uk-W7Y"/>
+                            <constraint firstItem="ECJ-h3-lYd" firstAttribute="top" secondItem="wSO-iw-pfP" secondAttribute="bottom" constant="8" id="gJZ-uk-W7Y">
+                                <variation key="widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="EE6-CY-5pE" firstAttribute="centerX" secondItem="iMl-aq-L1m" secondAttribute="centerX" id="i2R-Ew-mB0"/>
                             <constraint firstItem="wSO-iw-pfP" firstAttribute="leading" secondItem="iMl-aq-L1m" secondAttribute="leading" constant="4" id="ioz-WA-5Z4"/>
                             <constraint firstItem="wSO-iw-pfP" firstAttribute="centerX" secondItem="iMl-aq-L1m" secondAttribute="centerX" id="jUF-KZ-S8p"/>
@@ -566,13 +595,13 @@ CLUB
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abM-Eo-SIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="135.21126760563379"/>
+            <point key="canvasLocation" x="1709.3525179856117" y="134.89208633093526"/>
         </scene>
     </scenes>
     <resources>
         <image name="movie-918655_1920" width="1920" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cDg-FL-KOe"/>
+        <segue reference="eVb-B3-eGt"/>
     </inferredMetricsTieBreakers>
 </document>

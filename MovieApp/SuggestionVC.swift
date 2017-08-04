@@ -144,6 +144,7 @@ class SuggestionVC: UIViewController {
         case "Mafia": image2.image = UIImage(named: "Mafia")
         case "Sci-Fi": image2.image = UIImage(named: "Sci-fi")
         case "Documentary": image2.image = UIImage(named: "Documentary")
+        case "Western": image2.image = UIImage(named: "Western")
         default : image2.isHidden = true
         }
         
