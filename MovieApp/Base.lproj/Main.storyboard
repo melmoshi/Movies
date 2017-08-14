@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -27,7 +27,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="dCe-yk-ZKb">
@@ -36,7 +36,7 @@
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-eR-kJ5">
-                                <rect key="frame" x="124.5" y="347" width="519" height="258"/>
+                                <rect key="frame" x="30.5" y="183.5" width="259.5" height="129"/>
                                 <string key="text">MOVIE 
 NIGHT!</string>
                                 <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="70"/>
@@ -47,7 +47,7 @@ NIGHT!</string>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-qz-21W" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="134" y="641" width="500" height="80"/>
+                                <rect key="frame" x="35" y="348.5" width="250" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4O9-h9-Uae">
@@ -69,7 +69,7 @@ NIGHT!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grab  the   popcorn,  It's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dn-cg-Ubk">
-                                <rect key="frame" x="28" y="277.5" width="712" height="41.5"/>
+                                <rect key="frame" x="24" y="134.5" width="272" height="21"/>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -77,23 +77,37 @@ NIGHT!</string>
                                     <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="44"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDw-nC-1GY" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="r6W-xt-VTN"/>
+                                    <constraint firstAttribute="height" constant="50" id="x5W-mE-3hU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fDw-nC-1GY" secondAttribute="bottom" id="AHe-47-bZn"/>
+                            <constraint firstItem="fDw-nC-1GY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Aqp-iX-yZm"/>
                             <constraint firstItem="Sgu-qz-21W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FRj-ur-G1N"/>
                             <constraint firstItem="vzS-eR-kJ5" firstAttribute="top" secondItem="8Dn-cg-Ubk" secondAttribute="bottom" constant="28" id="Kuc-It-5JF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Dn-cg-Ubk" secondAttribute="trailing" constant="8" id="TpF-zl-CDX"/>
                             <constraint firstItem="vzS-eR-kJ5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-36" id="b3p-bn-q1N"/>
+                            <constraint firstAttribute="trailing" secondItem="fDw-nC-1GY" secondAttribute="trailing" id="gSa-hI-8js"/>
                             <constraint firstItem="8Dn-cg-Ubk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="sRa-fc-76Y"/>
                             <constraint firstItem="vzS-eR-kJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uIl-D8-2Kc"/>
                             <constraint firstItem="Sgu-qz-21W" firstAttribute="top" secondItem="vzS-eR-kJ5" secondAttribute="bottom" constant="36" id="vuG-HS-DWQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerAd" destination="fDw-nC-1GY" id="wVs-Sd-h21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134.53237410071944" y="135.97122302158274"/>
+            <point key="canvasLocation" x="133.125" y="135.21126760563379"/>
         </scene>
         <!--GenresVC-->
         <scene sceneID="iFa-5J-QXU">
@@ -104,7 +118,7 @@ NIGHT!</string>
                         <viewControllerLayoutGuide type="bottom" id="IBr-GS-NwF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZUw-3K-LgJ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-5s-0kd">
@@ -113,7 +127,7 @@ NIGHT!</string>
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap your favorite genres" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-k2-pOZ">
-                                <rect key="frame" x="252" y="284" width="264.5" height="33"/>
+                                <rect key="frame" x="66.5" y="89.5" width="187.5" height="23.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,7 +137,7 @@ NIGHT!</string>
                                 </variation>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyV-dm-hUx">
-                                <rect key="frame" x="259" y="709" width="250" height="80"/>
+                                <rect key="frame" x="52.5" y="457" width="215" height="40"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WDX-f4-WLV">
@@ -151,7 +165,7 @@ NIGHT!</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-yY-xFx" customClass="ResetButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="324" y="809" width="120" height="50"/>
+                                <rect key="frame" x="120" y="517" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RYS-LZ-0aW">
@@ -178,7 +192,7 @@ NIGHT!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is2-bL-S5S" customClass="RoundLabel" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="259" y="709" width="250" height="80"/>
+                                <rect key="frame" x="52.5" y="457" width="215" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="6oG-NE-QP3">
@@ -196,13 +210,13 @@ NIGHT!</string>
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-aL-c4a">
-                                <rect key="frame" x="240.5" y="355" width="287" height="314"/>
+                                <rect key="frame" x="53" y="151" width="214" height="266"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-rc-NO6">
-                                        <rect key="frame" x="32.5" y="0.0" width="222" height="56"/>
+                                        <rect key="frame" x="23" y="0.0" width="168" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-wp-GTJ" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="95" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -215,7 +229,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzr-mi-QyZ" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="120" y="0.0" width="102" height="56"/>
+                                                <rect key="frame" x="94" y="0.0" width="74" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,10 +244,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PHU-tG-eN0">
-                                        <rect key="frame" x="10.5" y="86" width="266" height="56"/>
+                                        <rect key="frame" x="7.5" y="74" width="199" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-5U-V4K" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="98" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -246,7 +260,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-of-KCI" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="123" y="0.0" width="143" height="56"/>
+                                                <rect key="frame" x="96" y="0.0" width="103" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -261,10 +275,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7ZN-44-8HR">
-                                        <rect key="frame" x="0.0" y="172" width="287" height="56"/>
+                                        <rect key="frame" x="0.0" y="148" width="214" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-8q-z0D" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -277,7 +291,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-iS-ua5" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="150" y="0.0" width="137" height="56"/>
+                                                <rect key="frame" x="115" y="0.0" width="99" height="44"/>
                                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="0.013415948279999999" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -292,10 +306,10 @@ NIGHT!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-VZ-0CC">
-                                        <rect key="frame" x="5.5" y="258" width="276" height="56"/>
+                                        <rect key="frame" x="4" y="222" width="206" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-VL-T0w" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="154" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="44"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.55294117649999996" blue="0.66666666669999997" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,7 +322,7 @@ NIGHT!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYL-cl-aTs" customClass="IngredientsButton" customModule="MovieApp" customModuleProvider="target">
-                                                <rect key="frame" x="179" y="0.0" width="97" height="56"/>
+                                                <rect key="frame" x="136" y="0.0" width="70" height="44"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.55294117649999996" blue="0.66666666669999997" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -325,7 +339,7 @@ NIGHT!</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameras  Rolling!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpS-OQ-z0Y">
-                                <rect key="frame" x="229.5" y="238" width="309.5" height="38"/>
+                                <rect key="frame" x="48" y="54" width="224.5" height="27.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Bebas" family="Bebas" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -377,7 +391,7 @@ NIGHT!</string>
                         <viewControllerLayoutGuide type="bottom" id="sva-Om-5pJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iMl-aq-L1m">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-918655_1920" translatesAutoresizingMaskIntoConstraints="NO" id="uSX-AR-4xf">
@@ -386,7 +400,7 @@ NIGHT!</string>
                                 <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-iw-pfP">
-                                <rect key="frame" x="4" y="299" width="760" height="246"/>
+                                <rect key="frame" x="4" y="114" width="312" height="160"/>
                                 <string key="text">FIGHT 
 CLUB 
 (2000)</string>
@@ -398,7 +412,7 @@ CLUB
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQZ-lm-lMn">
-                                <rect key="frame" x="244" y="773" width="280" height="60"/>
+                                <rect key="frame" x="52.5" y="377" width="215" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7nY-jh-72l">
@@ -427,7 +441,7 @@ CLUB
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-JF-Iwc" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="244" y="851" width="280" height="60"/>
+                                <rect key="frame" x="52.5" y="435" width="215" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="7sN-iN-qb7">
@@ -450,7 +464,7 @@ CLUB
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-hz-hBd" customClass="RoundButton" customModule="MovieApp" customModuleProvider="target">
-                                <rect key="frame" x="244" y="929" width="280" height="60"/>
+                                <rect key="frame" x="52.5" y="493" width="215" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.94901960780000005" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dI4-l8-FR7">
@@ -474,7 +488,7 @@ CLUB
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's  settled!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2d-gk-690">
-                                <rect key="frame" x="24" y="189" width="720" height="40"/>
+                                <rect key="frame" x="20" y="24" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="rkH-7G-MIY"/>
                                 </constraints>
@@ -486,7 +500,7 @@ CLUB
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-iC-Ckl">
-                                <rect key="frame" x="248.5" y="239" width="271.5" height="40"/>
+                                <rect key="frame" x="72" y="54" width="176" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZnL-Pt-Tra"/>
                                 </constraints>
@@ -498,10 +512,10 @@ CLUB
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECJ-h3-lYd" userLabel="Image Stack">
-                                <rect key="frame" x="297.5" y="595" width="173" height="40"/>
+                                <rect key="frame" x="83.5" y="282" width="153" height="30"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LYJ-Kf-9U4" userLabel="Image1">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="19F-BT-nSH">
                                                 <variation key="widthClass=regular" constant="40"/>
@@ -512,7 +526,7 @@ CLUB
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-6q-Cqv" userLabel="Image2">
-                                        <rect key="frame" x="133" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="123" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="baa-Ce-lzh">
                                                 <variation key="widthClass=regular" constant="40"/>
@@ -528,7 +542,7 @@ CLUB
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-CY-5pE">
-                                <rect key="frame" x="272" y="640" width="224" height="30"/>
+                                <rect key="frame" x="48" y="317" width="224" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gq-vX-6rT">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
@@ -602,6 +616,6 @@ CLUB
         <image name="movie-918655_1920" width="1920" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eVb-B3-eGt"/>
+        <segue reference="cDg-FL-KOe"/>
     </inferredMetricsTieBreakers>
 </document>

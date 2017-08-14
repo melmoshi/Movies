@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860EFFC01F36C0EC002A97F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860EFFBF1F36C0EC002A97F5 /* GoogleMobileAds.framework */; };
+		860EFFC21F36C10D002A97F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 860EFFC11F36C10D002A97F5 /* GoogleService-Info.plist */; };
 		866DF8411F2BF66A0030E37C /* movies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 866DF8401F2BF66A0030E37C /* movies.csv */; };
 		866DF8431F2C4B640030E37C /* Midnight Valentine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 866DF8421F2C4B640030E37C /* Midnight Valentine.ttf */; };
 		866DF8451F2C4CB30030E37C /* RoughNotesSample.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 866DF8441F2C4CB30030E37C /* RoughNotesSample.ttf */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860EFFBF1F36C0EC002A97F5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		860EFFC11F36C10D002A97F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		866DF8401F2BF66A0030E37C /* movies.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = movies.csv; sourceTree = "<group>"; };
 		866DF8421F2C4B640030E37C /* Midnight Valentine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Midnight Valentine.ttf"; sourceTree = "<group>"; };
 		866DF8441F2C4CB30030E37C /* RoughNotesSample.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoughNotesSample.ttf; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860EFFC01F36C0EC002A97F5 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,8 @@
 			children = (
 				86D57DCC1F1AFA0600DBDF59 /* MovieApp */,
 				86D57DCB1F1AFA0600DBDF59 /* Products */,
+				860EFFC11F36C10D002A97F5 /* GoogleService-Info.plist */,
+				860EFFBF1F36C0EC002A97F5 /* GoogleMobileAds.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +210,7 @@
 				866DF8471F2FB47E0030E37C /* Chunky Felt.otf in Resources */,
 				866DF8511F2FDFCD0030E37C /* BEBAS.ttf in Resources */,
 				866DF84F1F2FDF960030E37C /* BebasNeue.otf in Resources */,
+				860EFFC21F36C10D002A97F5 /* GoogleService-Info.plist in Resources */,
 				86D57DD51F1AFA0600DBDF59 /* Assets.xcassets in Resources */,
 				866DF8451F2C4CB30030E37C /* RoughNotesSample.ttf in Resources */,
 				866DF8431F2C4B640030E37C /* Midnight Valentine.ttf in Resources */,
@@ -352,6 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGJUGQYL7K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.MovieApp;
@@ -365,6 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RGJUGQYL7K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.MovieApp;

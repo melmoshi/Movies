@@ -5,11 +5,13 @@
 //  Created by Mel and Sand on 2017-07-15.
 //  Copyright © 2017 Moshi Media. All rights reserved.
 //
+// ADMOB: ca-app-pub-8878911622308650/1148157617
 
 import UIKit
 import GameKit
+import GoogleMobileAds
 
-class SuggestionVC: UIViewController {
+class SuggestionVC: UIViewController, GADInterstitialDelegate {
     
     @IBOutlet weak var movieLbl: UILabel!
     @IBOutlet weak var seeRecipeBtn: UIButton!
@@ -29,24 +31,43 @@ class SuggestionVC: UIViewController {
     var numberTryAgainPressed = 1
     //counts the number of times "Try Again" btn has been pressed
     
+    var interstitialAd: GADInterstitial?
+    //Google Ads
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         movieLbl.text = uniqueMovieArray[number].name
         showTags()
         
-        
+        //SET-UP & CONFIGURE INTERSTITIAL AD:
+        interstitialAd = createAndLoadInterstitial()
        
         
         
     }
-
-  
     
     //------------------------------------------------//
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        
+        let request = GADRequest()
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8878911622308650/1148157617")
+        request.testDevices = [kGADSimulatorID]
+        //COMMENT OUT FOR PUBLISHING (?)
+        interstitial.delegate = self
+        interstitial.load(request)
+        
+        
+        return interstitial
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitialAd = createAndLoadInterstitial()
+        numberTryAgainPressed = 0
+        //Resets the "Try Again" pressed count to zero
+    }
     
 
     @IBAction func seeReviewPressed(_ sender: Any) {
@@ -78,16 +99,16 @@ class SuggestionVC: UIViewController {
             movieLbl.text = uniqueMovieArray[number].name
             showTags()
             
-//            if numberTryAgainPressed >= 3 {
-//                
-//                if interstitialAd != nil {
-//                    if interstitialAd!.isReady {
-//                        
-//                        interstitialAd?.present(fromRootViewController: self)
-//                    }
-//                }
-//                
-//            }
+            if numberTryAgainPressed >= 3 {
+                
+                if interstitialAd != nil {
+                    if interstitialAd!.isReady {
+                        
+                        interstitialAd?.present(fromRootViewController: self)
+                    }
+                }
+                
+            }
             
         } else {
             
